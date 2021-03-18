@@ -9,7 +9,7 @@ Add app description
 ### App Walk-though
 
 
-<https://i.imgur.com/uN7lw2M.gif)> 
+<https://i.imgur.com/OjEkMAz.gif)> 
 
 
 ## Required
