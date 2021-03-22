@@ -20,7 +20,7 @@
                                 <rect key="frame" x="67" y="201" width="281" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1z-qC-Z9F">
+                                    <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Bronx, NY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1z-qC-Z9F">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.23708711139999999" green="0.14087154260000001" blue="0.13800526229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -28,7 +28,7 @@
                                         <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <color key="highlightedColor" systemColor="systemGroupedBackgroundColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many hats do you have?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-tN-RbD">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where was the birth of Hip-Hop?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-tN-RbD">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.59381917849999999" blue="0.58711394959999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -44,21 +44,41 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlC-Kl-m4u">
-                                <rect key="frame" x="116" y="683" width="182" height="141"/>
+                                <rect key="frame" x="116" y="755" width="182" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="138"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <segue destination="a7R-6z-E7I" kind="presentation" id="lyz-Mj-dHx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REG-u6-Whw">
+                                <rect key="frame" x="334" y="755" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOneNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTS-To-5ce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rp-mA-pou">
+                                <rect key="frame" x="41" y="755" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnePrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oIg-nc-f21"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="backLabel" destination="q1z-qC-Z9F" id="PfE-Ue-JRf"/>
                         <outlet property="frontLabel" destination="Q7J-tN-RbD" id="zUw-VV-WNk"/>
+                        <outlet property="nextButton" destination="REG-u6-Whw" id="5zb-Xr-i52"/>
+                        <outlet property="prevButton" destination="5rp-mA-pou" id="914-6u-krU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,6 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="VnJ-6e-nKw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="NVi-qF-Qno">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="24a-yf-EKH">
                             <connections>
@@ -106,6 +127,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="answerTextField" destination="Kyr-AY-Otc" id="aWn-29-hkb"/>
                         <outlet property="questionTextField" destination="Msy-0G-0Vd" id="Ukx-zG-AJm"/>
